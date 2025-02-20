@@ -10,8 +10,8 @@
   "task",
   "taske_name",
   "activity_name",
-  "uom",
   "measurement_type",
+  "uom",
   "column_break_opvz",
   "target_qty",
   "completed_qty",
@@ -56,6 +56,13 @@
    "reqd": 1
   },
   {
+   "fieldname": "measurement_type",
+   "fieldtype": "Select",
+   "label": "Measurement Type",
+   "options": "Increasing\nDecreasing\nConstant",
+   "reqd": 1
+  },
+  {
    "fieldname": "uom",
    "fieldtype": "Link",
    "in_filter": 1,
@@ -64,13 +71,6 @@
    "in_standard_filter": 1,
    "label": "Unit of Measure",
    "options": "UOM",
-   "reqd": 1
-  },
-  {
-   "fieldname": "measurement_type",
-   "fieldtype": "Select",
-   "label": "Measurement Type",
-   "options": "Increasing\nDecreasing\nConstant",
    "reqd": 1
   },
   {
@@ -108,7 +108,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-20 07:55:55.724291",
+ "modified": "2025-02-20 10:15:29.565277",
  "modified_by": "Administrator",
  "module": "ETPMS",
  "name": "Project Activity",
@@ -128,7 +128,7 @@
    "write": 1
   }
  ],
- "search_fields": "activity_name,task",
+ "search_fields": "activity_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
