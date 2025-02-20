@@ -48,8 +48,7 @@
    "fieldname": "uom",
    "fieldtype": "Link",
    "label": "UOM",
-   "options": "UOM",
-   "read_only": 1
+   "options": "UOM"
   },
   {
    "fieldname": "qty_completed",
@@ -87,7 +86,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-20 07:52:18.606525",
+ "modified": "2025-02-20 10:22:36.582591",
  "modified_by": "Administrator",
  "module": "ETPMS",
  "name": "Daily Performance Log",

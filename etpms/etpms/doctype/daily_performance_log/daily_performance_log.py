@@ -1,9 +1,5 @@
-# Copyright (c) 2025, Elif Technologies PLC and contributors
-# For license information, please see license.txt
-
-# import frappe
+import frappe
 from frappe.model.document import Document
-
 
 class DailyPerformanceLog(Document):
     def on_submit(self):
