@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: TA-PA-{MM}-{YYYY}-{####}",
+ "creation": "2025-01-26 12:56:21.506818",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_o91u",
+  "project_activity",
+  "project_activity_name",
+  "date",
+  "uom",
+  "qty_completed",
+  "performance_to_date",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_o91u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_activity",
+   "fieldtype": "Link",
+   "label": "Project Activity",
+   "options": "Project Activity",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project_activity.activity_name",
+   "fieldname": "project_activity_name",
+   "fieldtype": "Data",
+   "label": "Project Activity Name",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project_activity.uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty_completed",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty Completed",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "performance_to_date",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Performance to Date(%)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily Performance Log",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-20 07:52:18.606525",
+ "modified_by": "Administrator",
+ "module": "ETPMS",
+ "name": "Daily Performance Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "project_activity_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_activity_name"
+}
